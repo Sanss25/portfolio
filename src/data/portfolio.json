@@ -1,0 +1,109 @@
+{
+  "profile": {
+    "name": "Sanskruti Udage",
+    "shortName": "Sanskruti",
+    "driverNumber": "27",
+    "tagline": "Turning data into decisions — and shipping the product around them.",
+    "role": "Software Developer · Data-Driven Product Builder · AI/ML",
+    "specialization": "Full-Stack · Data-Driven Products · AI/ML",
+    "location": "Gurugram, India",
+    "status": "B.Tech CSE (AI & ML), VIT Bhopal — Expected Jan 2027",
+    "bio": "I'm a final-year CSE (AI & ML) undergraduate at VIT Bhopal (CGPA 8.08) who likes owning a problem end-to-end — from the data pipeline to the interface someone actually clicks on. My flagship build, PitWall, pairs a live F1 telemetry dashboard with a win-probability model and a strategy recommender that turns raw data into a clear call. I've also built a RAG-based video intelligence chatbot on LangGraph and ChromaDB. Comfortable across the stack — pipelines, backend services, frontend, and the metrics that tell you whether any of it worked — and currently looking for software development and AI/ML engineering roles.",
+    "social": {
+      "github": "",
+      "linkedin": "https://linkedin.com/in/sanskruti-udage/",
+      "instagram": "",
+      "email": "workwsanskruti@gmail.com",
+      "phone": "+91 87448 21234",
+      "website": "https://pitwall-lilac.vercel.app"
+    }
+  },
+  "skills": {
+    "categories": [
+      { "name": "Languages", "items": ["Python (Advanced)", "JavaScript (ES6+)", "Java (Coursework)", "C", "C++ (Coursework)"] },
+      { "name": "Data & Analytics", "items": ["Pandas", "NumPy", "Feature Engineering", "Predictive Modeling", "Dashboards"] },
+      { "name": "AI/ML & GenAI", "items": ["LangChain / LangGraph (Agentic)", "RAG Pipelines", "Prompt Engineering", "TensorFlow", "scikit-learn"] },
+      { "name": "LLM / API Integration", "items": ["Groq", "OpenAI Whisper", "FastAPI"] },
+      { "name": "Frontend", "items": ["React.js (Hooks, Functional Components)", "Node.js"] },
+      { "name": "Databases", "items": ["SQL (Coursework)", "ChromaDB (Vector / NoSQL)"] },
+      { "name": "Tools", "items": ["Git", "Flask", "Vercel Serverless", "AWS"] },
+      { "name": "Concepts", "items": ["Machine Learning", "NLP", "Computer Vision", "Agentic AI Workflows"] }
+    ],
+    "strengths": ["Machine Learning", "Deep Learning", "Computer Vision", "NLP", "Data Analysis", "API Integration", "End-to-End Deployment", "Problem Solving"]
+  },
+  "experience": [
+    {
+      "company": "Saiko Kikai India",
+      "role": "Software Development Engineer Intern",
+      "period": "May 2026 — June 2026",
+      "location": "India",
+      "summary": "Built an inventory tracking system for a manufacturing supply chain unit.",
+      "highlights": [
+        "Built an inventory tracking system in Python for a manufacturing supply chain unit, enabling real-time visibility into stock levels and reorder points.",
+        "Applied ML for demand forecasting and generative AI for automated reporting, streamlining inventory tracking and cutting manual effort for the unit."
+      ]
+    },
+    {
+      "company": "Edu-versity",
+      "role": "Machine Learning Intern",
+      "period": "May 2024 — Aug 2024",
+      "location": "Gurugram, India",
+      "summary": "Built and shipped ML models end-to-end, from feature engineering to production monitoring.",
+      "highlights": [
+        "Improved model prediction accuracy through systematic feature engineering and hyperparameter tuning across TensorFlow and scikit-learn models, using NumPy and Pandas for preprocessing.",
+        "Deployed and monitored end-to-end ML pipelines from data ingestion through production, using Git for version control and reproducibility."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "rag-video-chatbot",
+      "title": "RAG Video Intelligence Chatbot",
+      "subtitle": "Semantic search over YouTube & Reels, with citations",
+      "description": "An automated pipeline transcribes YouTube and Instagram Reel audio with OpenAI Whisper and stores embedded chunks in ChromaDB for semantic search. A LangGraph-orchestrated FastAPI backend delivers citation-grounded, multi-turn answers with conversation memory, streamed token-by-token to a React frontend.",
+      "stack": ["Python", "FastAPI", "LangGraph", "ChromaDB", "OpenAI Whisper", "React", "Streaming APIs"],
+      "role": "Solo builder",
+      "year": "2026",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "pitwall",
+      "title": "PitWall",
+      "subtitle": "Live F1 Race Intelligence Dashboard",
+      "description": "A full-stack live telemetry dashboard polling the OpenF1 API every 5 seconds for lap times, positions, tyre compounds, pit stops, and weather, with a Python + FastF1 ETL pipeline as historical fallback. Ships a 10-panel dashboard: a PIT NOW / STAY OUT strategy recommender, a 6-feature ML win-probability model, driver comparison, telemetry bars, and a race replay scrubber — plus an AI race engineer chatbot on Groq Llama 3.3-70B behind a secure serverless proxy.",
+      "stack": ["Python", "FastF1", "OpenF1 API", "Pandas", "JavaScript", "Node.js", "Vercel Serverless", "Groq API"],
+      "role": "Solo builder",
+      "year": "2026",
+      "link": "https://pitwall-lilac.vercel.app",
+      "image": "",
+      "highlight": true
+    },
+    {
+      "id": "pneumonia-detection",
+      "title": "Pneumonia Detection from X-rays",
+      "subtitle": "ResNet-50 CNN for chest X-ray classification",
+      "description": "Trained a ResNet-50 CNN to classify pneumonia in chest X-rays, reaching a 92% F1-score on test data. Preprocessed DICOM medical images in OpenCV and cut false positives by 15% through targeted augmentation.",
+      "stack": ["Python", "TensorFlow", "OpenCV", "ResNet-50", "DICOM"],
+      "role": "Solo builder",
+      "year": "2024",
+      "link": "",
+      "image": "",
+      "highlight": false
+    }
+  ],
+  "education": [
+    { "school": "VIT Bhopal", "credential": "B.Tech — CSE (AI & ML)", "detail": "CGPA: 8.08", "period": "Expected Jan 2027" },
+    { "school": "DAV School", "credential": "Senior Secondary (12th)", "detail": "87%", "period": "Jan 2022" },
+    { "school": "OLF Convent School", "credential": "High School (10th)", "detail": "97.4% · CBSE Board", "period": "" }
+  ],
+  "certifications": [
+    { "title": "Deloitte Technology Job Simulation", "issuer": "Forage" },
+    { "title": "Google IT Support Professional Certificate", "issuer": "Google / Coursera" },
+    { "title": "Complete A.I. & Machine Learning, Data Science Bootcamp", "issuer": "Udemy" },
+    { "title": "AWS Technical Essentials + Cloud Practitioner Practice", "issuer": "Amazon" },
+    { "title": "Artificial Intelligence A-Z 2025: Agentic AI, Gen AI & RL", "issuer": "Udemy" }
+  ],
+  "testimonials": []
+}

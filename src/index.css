@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-track: #0a0b0d;
+  --color-asphalt: #16181b;
+  --color-asphalt-light: #202327;
+  --color-line: #2a2d32;
+  --color-chalk: #ecedef;
+  --color-grey: #888d94;
+  --color-grey-dim: #5a5e64;
+  --color-red: #e6272c;
+  --color-red-dim: #7a1417;
+  --color-purple: #a855f7;
+  --color-green: #2dd4a7;
+
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-track);
+}
+
+body {
+  background: var(--color-track);
+  color: var(--color-chalk);
+  font-family: var(--font-body);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+section {
+  scroll-margin-top: 84px;
+}
+
+::selection {
+  background: var(--color-red);
+  color: var(--color-chalk);
+}
+
+/* subtle carbon-fiber texture on the base background */
+.carbon-bg {
+  background-image:
+    repeating-linear-gradient(135deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 6px),
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 6px);
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #ffffff 0%, #9aa0a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    overflow-x: auto;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes needle-sweep {
+  0%, 100% { transform: rotate(-28deg); }
+  50% { transform: rotate(28deg); }
+}
+.needle {
+  animation: needle-sweep 3.4s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .needle { animation: none; }
+}
